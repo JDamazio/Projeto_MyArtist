@@ -5,9 +5,12 @@ import utils.Console;
 public class Principal {
     public static void main (String[] args) {
 
-        int opcao = 0;
+        int opcao = 0, opcaoEditar;
         do{
-            System.out.println("\n\n\n\n\n\t  ====  My artist  ==== \n");
+            System.out.println("\n\n\n\t  ====  My artist  ==== \n");
+
+            System.out.println("\t| 0 - Sair\t\t|");
+            System.out.println("\t|=======================|");
             System.out.println("\t| 1 - Cadastrar Cliente\t|");
             System.out.println("\t| 2 - Listar Clientes\t|");
             System.out.println("\t| 3 - Cadastrar Artista\t|");
@@ -16,8 +19,10 @@ public class Principal {
             System.out.println("\t| 6 - Listar Produtos\t|");
             System.out.println("\t| 7 - Agendar\t\t|");
             System.out.println("\t| 8 - Agendamentos\t|");
-            System.out.println("\t| 0 - Sair\t\t|\n");
-            opcao = Console.readInt("Digite uma opção: ");
+            System.out.println("\t|=======================|");
+            System.out.println("\t| 9 - Editar\t\t|\n");
+            
+            opcao = Console.readInt("\t Digite uma opção: ");
 
             switch (opcao) {
                 case 1:
@@ -48,9 +53,31 @@ public class Principal {
                     Agendar agendar = new Agendar();
                     agendar.renderizar();
                     break;
-                    case 8:
+                case 8:
                     Agendamentos agendamentos = new Agendamentos();
                     agendamentos.renderizar();
+                    break;
+                case 9:
+                    System.out.println("\n\t        EDITANDO  \n");
+                    System.out.println("\t| 1 - Editar Artista\t|");
+                    System.out.println("\t| 2 - Editar Cliente\t|");
+                    System.out.println("\t| 3 - Editar Produto\t|\n");
+
+                    opcaoEditar = Console.readInt("\t Digite uma opção: ");
+
+                    switch (opcaoEditar) {
+                        case 1:
+                            
+                            break;
+                        case 2:
+                            // EditarCliente editarCliente = new EditarCliente();
+                            // editarCliente.renderizar();
+                            break;
+                        case 3:
+                            break;
+                        default:
+                            break;
+                    }
                     break;
                 case 0:
                     System.out.println("\n -- SAINDO -- \n");

@@ -7,7 +7,7 @@ public class Agendamentos {
 
     public void renderizar(){
         AgendamentoController agendamentoController = new AgendamentoController();      
-        System.out.println("\n -- Agendamentos -- \n");
+        System.out.println("\n -- AGENDAMENTO -- \n");
         for (Agendamento agendamentoCadastrado : agendamentoController.listar()) {
             System.out.println(agendamentoCadastrado);
         }

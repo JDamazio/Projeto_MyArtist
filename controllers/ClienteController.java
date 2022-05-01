@@ -24,4 +24,14 @@ public class ClienteController {
         }
         return null;
     }
+
+    public static void editar(Cliente cliente) {
+		int index = clientes.indexOf(cliente);
+		if(index > 0) clientes.add(index, cliente);
+	}
+
+    public static void excluirCliente(Cliente c) {
+		int index = clientes.indexOf(c);
+		if(index > 0) clientes.remove(index);
+	}
 }

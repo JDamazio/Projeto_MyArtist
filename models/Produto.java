@@ -38,6 +38,6 @@ public class Produto {
             "Nome: " + nome +
             " | Tipo de traços: " + tipo + 
             " | Preço: " + preco + 
-            " | Tamanho: " + tamanho;
+            " | Tamanho: " + tamanho + "cm";
     }
 }
