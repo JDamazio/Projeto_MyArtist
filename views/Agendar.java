@@ -39,7 +39,7 @@ public class Agendar { //Relacionar
                 if (produto != null) {
                     agendamento.setProduto(produto);
                     agendamentoController.cadastrar(agendamento);
-                    System.out.println("Agendamento realizado com sucesso!");
+                    System.out.println("\n Agendamento realizado com sucesso!");
                 }else{
                     System.out.println("Produto não encontrado!");
                 }
