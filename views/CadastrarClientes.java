@@ -13,6 +13,7 @@ public class CadastrarClientes {
         System.out.println("\n -- CADASTRO DE CLIENTES -- \n");
         cliente.setNome(Console.readString("Digite o nome do cliente: "));
         cliente.SetCpf(Console.readString("Digite o CPF do cliente: "));
+        cliente.SetDataNasc(Console.readString("Digite sua data de nascimento: "));
         cliente.SetCel(Console.readString("Digite o número do celular: "));
         clienteController.cadastrar(cliente);
         System.out.println("\n Cliente cadastrado com SUCESSO !! \n");

@@ -11,10 +11,8 @@ public class CadastrarProduto {
         ProdutoController produtoController = new ProdutoController();
 
         System.out.println("\n -- CADASTRO DE PRODUTOS -- \n");
-        produto.setNome(Console.readString("Digite o nome do produto: "));
-        produto.setTipo(Console.readString("Digite o tipo do traços: "));
-        produto.setTamanho(Console.readInt("Digite o tamanho(cm): "));
-        produto.setPreco(Console.readDouble("Digite o preço do produto: R$"));
+        produto.setProduto(Console.readString("Digite o serviço contratado: "));
+        produto.setLocalizacao(Console.readString("Em qual parte do corpo: "));
         produtoController.cadastrar(produto);
         System.out.println("\n Produto cadastrado com SUCESSO !! \n");
     }

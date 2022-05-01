@@ -1,43 +1,31 @@
 package models;
 
 public class Produto {
-    
-    private String nome;
-    private String tipo;
-    private double preco;
-    private int tamanho;
 
-    public String getNome() {
-        return nome;
+    
+    private String produto;
+    private String localizacao;
+
+
+    public String getProduto() {
+        return produto;
     }
-    public void setNome(String nome) {
-        this.nome= nome;
+    public void setProduto(String produto) {
+        this.produto= produto;
     }
-    public String getTipo() {
-        return tipo;
+
+    public String getLocalizacao() {
+        return localizacao;
     }
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setLocalizacao(String localizacao) {
+        this.localizacao= localizacao;
     }
-    public double getPreco() {
-        return preco;
-    }
-    public void setPreco(double preco) {
-        this.preco = preco;
-    }
-    public int getTamanho() {
-        return tamanho;
-    }
-    public void setTamanho(int tamanho) {
-        this.tamanho = tamanho;
-    }
+
 
     @Override //anotação
     public String toString() {
         return 
-            "Nome: " + nome +
-            " | Tipo de traços: " + tipo + 
-            " | Preço: " + preco + 
-            " | Tamanho: " + tamanho + "cm";
+            "Produto/Serviço: " + produto +
+            " | Localização: " + localizacao ;
     }
 }

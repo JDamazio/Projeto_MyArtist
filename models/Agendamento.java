@@ -30,7 +30,7 @@ public class Agendamento {
         return 
             "Cliente: " + cliente.getNome() +
             " | Artista: " + artista.getNome() + 
-            " | Produto: " + produto.getNome();
+            " | Produto: " + produto.getProduto();
     }
 }
 

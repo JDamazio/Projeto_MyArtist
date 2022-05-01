@@ -35,7 +35,7 @@ public class Agendar { //Relacionar
                 
                 //INFO do produto
                 String nomeProduto = Console.readString("Digite o nome do produto: ");
-                Produto produto = produtoController.buscarPorNome(nomeProduto);
+                Produto produto = produtoController.buscarPorProduto(nomeProduto);
                 if (produto != null) {
                     agendamento.setProduto(produto);
                     agendamentoController.cadastrar(agendamento);
