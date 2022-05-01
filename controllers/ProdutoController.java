@@ -23,4 +23,9 @@ public class ProdutoController {
         }
         return null;
     }
+
+    public static void editar(Produto produto) {
+		int index = produtos.indexOf(produto);
+		if(index > 0) produtos.add(index, produto);
+	}
 }

@@ -30,7 +30,7 @@ public class ClienteController {
 		if(index > 0) clientes.add(index, cliente);
 	}
 
-    public static void excluirCliente(Cliente c) {
+    public  static void excluirCliente(Cliente c) {
 		int index = clientes.indexOf(c);
 		if(index > 0) clientes.remove(index);
 	}

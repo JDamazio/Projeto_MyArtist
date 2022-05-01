@@ -24,4 +24,18 @@ public class ArtistaController {
         }
         return null;
     }
+
+    public static void editar(Artista artista) {
+		int index = artistas.indexOf(artista);
+		if(index > 0) artistas.add(index, artista);
+	}
+
+    public  static void excluirArtista(Artista a) {
+		int index = artistas.indexOf(a);
+		if(index > 0) artistas.remove(index);
+	}
+
+    public static boolean exists(Artista a){
+		return artistas.contains(a);
+	}
 }

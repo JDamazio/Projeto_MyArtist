@@ -58,24 +58,36 @@ public class Principal {
                     agendamentos.renderizar();
                     break;
                 case 9:
-                    System.out.println("\n\t        EDITANDO  \n");
+                    System.out.println("\n\t   ==== EDITANDO ==== \n");
                     System.out.println("\t| 1 - Editar Artista\t|");
                     System.out.println("\t| 2 - Editar Cliente\t|");
-                    System.out.println("\t| 3 - Editar Produto\t|\n");
+                    System.out.println("\t| 3 - Editar Produto\t|");
+                    System.out.println("\t|=======================|");
+                    System.out.println("\t| 4 - Deletar Artista\t|");
+                    System.out.println("\t| 5 - Deletar Cliente\t|");
+                    System.out.println("\t| 6 - Deletar Produto\t|\n");
 
                     opcaoEditar = Console.readInt("\t Digite uma opção: ");
 
                     switch (opcaoEditar) {
                         case 1:
-                            
+                            EditarArtista editarArtista = new EditarArtista();
+                            editarArtista.renderizar();
                             break;
                         case 2:
-                            // EditarCliente editarCliente = new EditarCliente();
-                            // editarCliente.renderizar();
+                            EditarCliente editarCliente = new EditarCliente();
+                            editarCliente.renderizar();
                             break;
                         case 3:
+                            EditarProduto editarProduto = new EditarProduto();
+                            editarProduto.renderizar();
+                            break;
+                        case 4:
+                            DeletarArtista deletarArtista = new DeletarArtista();
+                            deletarArtista.renderizar();
                             break;
                         default:
+                            System.out.println("\n --OPÇÃO INVÁLIDA (d)-- \n");
                             break;
                     }
                     break;
