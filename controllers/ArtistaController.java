@@ -30,12 +30,25 @@ public class ArtistaController {
 		if(index > 0) artistas.add(index, artista);
 	}
 
-    public  static void excluirArtista(Artista a) {
+    public static void excluirArista(Artista a) {
 		int index = artistas.indexOf(a);
-		if(index > 0) artistas.remove(index);
+		if(index < 0 || index >= size()) artistas.remove(index);
 	}
+    
+    private static int size() {
+        return 0;
+    }
 
-    public static boolean exists(Artista a){
+    public static Boolean exists(Artista a){
 		return artistas.contains(a);
 	}
+
+    // public Artista buscarPorNome(String nome){
+    //     for (Artista artistaCadastrado : artistas) {
+    //         if(artistaCadastrado.getNome().equals(nome)){
+    //             return artistaCadastrado;
+    //         }
+    //     }
+    //     return null;
+    // }
 }

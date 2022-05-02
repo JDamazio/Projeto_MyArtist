@@ -32,6 +32,13 @@ public class ClienteController {
 
     public  static void excluirCliente(Cliente c) {
 		int index = clientes.indexOf(c);
-		if(index > 0) clientes.remove(index);
+		if(index < 0 || index >= size()) clientes.remove(index);
+	}
+    private static int size() {
+        return 0;
+    }
+
+    public static Boolean exists(Cliente c){
+		return clientes.contains(c);
 	}
 }

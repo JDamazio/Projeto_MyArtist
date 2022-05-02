@@ -24,10 +24,12 @@ public class DeletarArtista {
 				System.out.println("\nATENÇÃO: Perca permanente! ");
 			
 				String opcao = Console.readString("[sim/nao]");
-				if(opcao.equals("sim")) {
-					ArtistaController.excluirArtista(artista);
+				if("sim".equals(opcao)) {
+					ArtistaController.excluirArista(artista);
 					if(!ArtistaController.exists(artista)){
 						System.out.println("\nArtista deletado com SUCESSO!!");
+					}else{
+						System.out.println("\nERRO ao deletar!!");
 					}
 				} 
 			}

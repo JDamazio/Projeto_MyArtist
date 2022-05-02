@@ -64,8 +64,8 @@ public class Principal {
                     System.out.println("\t| 3 - Editar Produto\t|");
                     System.out.println("\t|=======================|");
                     System.out.println("\t| 4 - Deletar Artista\t|");
-                    System.out.println("\t| 5 - Deletar Cliente\t|");
-                    System.out.println("\t| 6 - Deletar Produto\t|\n");
+                    System.out.println("\t| 5 - Deletar Cliente\t|\n");
+
 
                     opcaoEditar = Console.readInt("\t Digite uma opção: ");
 
@@ -85,6 +85,10 @@ public class Principal {
                         case 4:
                             DeletarArtista deletarArtista = new DeletarArtista();
                             deletarArtista.renderizar();
+                            break;
+                        case 5:
+                            DeletarCliente deletarCliente = new DeletarCliente();
+                            deletarCliente.renderizar();
                             break;
                         default:
                             System.out.println("\n --OPÇÃO INVÁLIDA (d)-- \n");
